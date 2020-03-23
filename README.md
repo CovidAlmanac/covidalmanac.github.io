@@ -1,0 +1,1 @@
+# covidalmanac.github.io
