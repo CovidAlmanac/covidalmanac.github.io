@@ -1,1 +1,422 @@
-Hello!
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
+  <meta property="og:site_name" content="Covid Almanac" />
+  <meta property="og:description" content="Reference list of resources related to the Coronavirus COVID-19 Pandemic: Maps, Projects, Donations, Volunteering, Jobs, Tweets, and more." />
+  <meta property="og:image" content="https://covidalmanac.com/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@covidalmanac" />
+  <meta name="twitter:creator" content="@danbsfo" />
+  <meta name="twitter:title" content="COVID Almanac" />
+  <meta name="twitter:description" content="Reference list of resources related to the Coronavirus COVID-19 Pandemic: Maps, Projects, Donations, Volunteering, Jobs, Tweets, and more." />
+  <meta name="twitter:image" content="https://covidalmanac.com/logo.png" />
+  <link rel="shortcut icon" href="https://covidalmanac.com/covidalmanac.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="192x192" href="https://covidalmanac.com/logo.png" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Covid Almanac" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="theme-color" content="#ffffff" />
+  <style>
+    /* Tags and main components */
+    html, body {
+      height:100%;
+      line-height:26px;
+      font-size:16px;
+      font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    }
+    body {
+      display:flex;
+      flex-direction:column;
+      overflow-y:scroll;
+      overscroll-behavior-y:none;
+    }
+    a,a:active {
+      font-weight:600;
+      color:#000;
+    }
+    a:visited {
+      color:#555;
+    }
+    svg {
+      cursor:pointer;
+      position:relative;
+      top:.225em;
+      padding-right:10px;
+    }
+    .container {
+      flex:1 0 auto;
+      max-width:1100px;
+      margin:auto;
+    }
+    .text-center {
+      text-align:center;
+    }
+    /* Header */
+    .logo-about {
+      display:flex;
+      justify-content:space-between;
+    }
+    .logo {
+      font-size:1.4em;
+      text-shadow:2px 1px 3px rgba(100,100,100,0.6);
+      max-width:550px;
+      flex:1;
+    }
+    .logo img {
+      position:relative;
+      top:.4em;
+      margin-right:10px;
+    }
+    .logo a {
+      text-decoration:none;
+    }
+    .logo a:visited {
+      color:#000;
+    }
+    .menu-items {
+      display:flex;
+      max-width:100px;
+      flex:1;
+      text-align:right;
+      justify-content:space-between;
+    }
+    .info {
+      max-width:800px;
+      margin:auto;
+      margin-top:10px;
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius:7px;
+    }
+    /* Content */
+    .main {
+      max-width:1100px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:auto;
+    }
+    .group {
+      min-width:300px;
+      flex:1;
+    }
+    .item {
+      margin-bottom:10px;
+    }
+    .title {
+      display:flex;
+      margin-bottom:-10px;
+    }
+    .subtitle {
+      margin-left:30px;
+    }
+    .endorse {
+      text-align:right;
+      margin-right:20px;
+      flex:1;
+    }
+    .endorse img {
+      border-radius:50%;
+      border:1px solid #ccc;
+    }
+    .endorse a {
+      padding-right:8px;
+    }
+    .footer {
+      margin-bottom:5px;
+      padding:10px;
+      flex-shrink:0;
+      text-align:center;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-about">
+        <div class="logo"><a href="https://covidalmanac.com/"><img src="logo.png" height="30">COVID Almanac</a></div>
+        <div class="menu-items">
+          <a href="about.html" id="about-menu">About</a>
+          <a href="https://twitter.com/covidalmanac" target="_blank"><img src="twitter.svg" alt="Twitter" height="24"></a>
+        </div>
+      </div>
+      <div class="text-center info">
+        Covid Almanac is a list of resources for researchers and people looking for ways they can help during this global pandemic. If you are feeling unwell contact your doctor. If you are looking for official information try the <a href="https://www.cdc.gov/coronavirus/2019-ncov">CDC</a>.
+      </div>
+    </div>
+
+    <div class="main">
+
+      <div class="group">
+        <h3>Maps & Data</h3>
+        <div class="item">
+          <div class="title" class="title" id="id2">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://coronavirus.jhu.edu/map.html" target="_blank">Johns Hopkins</a>
+            <div class="endorse"><a href="https://twitter.com/steve_hanke/status/1242104314442776577?s=20" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/915395033871867905/3zbE7bAT_reasonably_small.jpg"></a><a href="https://twitter.com/LucColemont/status/1239984604393734144?s=20" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1222254499491975169/luEHt4Je_reasonably_small.png"></a></div>
+          </div>
+          <div class="subtitle">Map of World Cases</div>
+        </div>
+        <div class="item">
+          <div class="title" id="id10">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://covidactnow.org">Covid Act Now</a>
+            <div class="endorse"><a href="https://twitter.com/JamesTamplin/status/1241067368605863936" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1057549559205834752/UM_SFl1N_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Make Fast Decisions</div>
+        </div>
+        <div class="item">
+          <div class="title" id="id13">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://covidtracking.com/">Covid Tracking</a>
+            <div class="endorse"><a href="https://twitter.com/balajis/status/1242684135769911297" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/422242769747193856/0ISaDb4__reasonably_small.png"></a></div>
+          </div>
+          <div class="subtitle">Testing Data</div>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3>Donations</h3>
+        <div class="item">
+          <div class="title" id="id3">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://makeagift.ucsf.edu/site/SPageServer/;jsessionid=00000000.app30038a?pagename=A1_API_GeneralGivingForm&Other=Quantitative+Biosciences+Institute+General+Gifts+Fund+(B7744)&NONCE_TOKEN=403873607DB63B29CDBA49775D1FB6B4" target="_blank">Give to UCSF</a>
+            <div class="endorse"><a href="https://twitter.com/paulg/status/1242163996788240384?s=20" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Quantitative Bioscience Institute</div>
+
+        </div>
+
+        <div class="item">
+          <div class="title" id="id4">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://www.gofundme.com/f/frontlinerespondersfund" target="_blank">Flexport.org</a>
+            <div class="endorse"><a href="https://twitter.com/paulg/status/1242494749740802048?s=20" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Supplies to frontline</div>
+        </div>
+
+        <div class="item">
+          <div class="title" id="id5">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://mrelief.com/coronavirus" target="_blank">mRelief</a>
+            <div class="endorse"><a href="https://twitter.com/paulg/status/1241066200005779456?s=20" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Get people benefits</div>
+        </div>
+
+      </div>
+
+      <div class="group">
+        <h3>Volunteer</h3>
+        <div class="item">
+          <div class="title" id="id9">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://helpwithcovid.com">Help With Covid</a>
+            <div class="endorse"><a href="https://twitter.com/sama/status/1239990683118768128" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/804990434455887872/BG0Xh7Oa_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Help or List Projects</div>
+        </div>
+        <div class="item">
+          <div class="title" id="id7">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXC56q2tPgz0WbPrhP7WareiclfxfaKQFI0ZbXg4FkKan5iQ/viewform" target="_blank">Scientist Volunteer</a>
+            <div class="endorse"><a href="https://twitter.com/mfwells5/status/1240359558696009729?s=20" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1090023926820941825/p9OE6Fd4_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Scientists Helping Local Govt</div>
+        </div>
+        <div class="item">
+          <div class="title" id="id11">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://crowdfightcovid19.org/">Crowd Fight Covid</a>
+            <div class="endorse">
+              <a href="https://twitter.com/dePolavieja/status/1240410149317214221" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/2299242451/etvupq4fuzel433ekqw5_reasonably_small.jpeg"></a>
+              <a href="https://twitter.com/MelMitchell1/status/1241098171599577088" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/797887853090873344/c9SXRCTG_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Match Scientists</div>
+        </div>
+
+      </div>
+
+      <div class="group">
+        <h3>Projects</h3>
+        <div class="item">
+          <div class="title" class="title" id="id1">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://covidaccelerator.com/">Covid Accelerator</a>
+            <div class="endorse"><a href="https://twitter.com/sam_debrouwer/status/1238811401554018306?s=20" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1071236329969606656/A6IBEXnt_reasonably_small.jpg" target="_blank"></a><a href="https://twitter.com/titojankowski/status/1239693981451046912?s=20"><img height="24" src="https://pbs.twimg.com/profile_images/1239782096559673344/8jkQQTW-_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Hack Project Ideas</div>
+        </div>
+        <div class="item">
+          <div class="title" id="id8">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://www.zfnd.org/blog/decentralized-contact-tracing/">Contact Tracing</a>
+            <div class="endorse"><a href="https://twitter.com/hdevalence/status/1242192708724125696" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1187219482294411264/TRUnbKar_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Privacy Preserving Alerts</div>
+        </div>
+
+      </div>
+
+      <div class="group">
+        <h3>Support</h3>
+        <div class="item">
+          <div class="title" id="id12">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://thesocialdistance.network">Social Distance Network</a>
+            <div class="endorse"><a href="https://twitter.com/beller/status/1241084398285385728" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/992269193662754816/xTapyWEH_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Buy swag to support Meals on Wheels</div>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3>Jobs</h3>
+        <div class="item">
+          <div class="title" id="id15">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://jobs.covid19.nj.gov">NJ Jobs Portal</a>
+            <div class="endorse"><a href="https://twitter.com/GovMurphy/status/1242517291604029442" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1237143859005665282/OyTayLI9_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Portal for Jobs and Hiring</div>
+        </div>
+        <div class="item">
+        <div class="title" id="id16">
+          <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+          <a href="https://lajobsportal.org">LA Jobs Portal</a>
+          <div class="endorse"><a href="https://twitter.com/LACity/status/1241164292528803840" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/880031210415599616/I1IlnKdB_reasonably_small.jpg"></a></div>
+        </div>
+        <div class="subtitle">New Jobs in LA</div>
+      </div>
+
+      </div>
+
+      <div class="group">
+        <h3>Entertainment</h3>
+        <div class="item">
+          <div class="title" id="id14">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://zoomroulette.herokuapp.com">Zoom Roulette</a>
+            <div class="endorse"><a href="https://twitter.com/JerryF_Zhang/status/1240066269136785409" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1240066071186587648/lruiRcgP_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Join Random Zoom Calls</div>
+        </div>
+
+      </div>
+
+      <div class="group">
+        <h3>Reference</h3>
+        <div class="item">
+          <div class="title" id="id6">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://golden.com/wiki/Cluster%3A_COVID-19-ZXJX9AR" target="_blank">Golden</a>
+            <div class="endorse"><a href="https://twitter.com/judegomila/status/1240713474893725697?s=20"><img height="24" src="https://pbs.twimg.com/profile_images/622596330553118720/cZv6p908_reasonably_small.png"></a></div>
+          </div>
+          <div class="subtitle">COVID-19 Cluster (Resources)</div>
+        </div>
+
+      </div>
+
+      <div class="group">
+        <h3>Tweets</h3>
+        <div class="item">
+          <div class="title" id="id17">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://twitter.com/NAChristakis/status/1240689935557865472">Recovery</a>
+            <div class="endorse"><a href="https://twitter.com/NAChristakis/status/1240689935557865472" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/1240957631470211072/PQTg0kc9_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">What happens after you recover</div>
+        </div>
+        <div class="item">
+          <div class="title" id="id18">
+            <svg onclick="Covid.tapStar(this)" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 51 48"><path fill="#fff" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/></svg>
+            <a href="https://twitter.com/yaneerbaryam/status/1239697605606682626">Lockdown Progress</a>
+            <div class="endorse"><a href="https://twitter.com/yaneerbaryam/status/1239697605606682626" target="_blank"><img height="24" src="https://pbs.twimg.com/profile_images/679101365860196352/A0FJiBXE_reasonably_small.jpg"></a></div>
+          </div>
+          <div class="subtitle">Italy levels off after lockdown</div>
+        </div>
+
+      </div>
+
+      <div class="group">
+        <h3></h3>
+
+
+      </div>
+
+
+    </div>
+  </div>
+  <div class="footer">
+    Copyleft 2020 Covid Almanac
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      Covid.loadStars();
+    })
+
+    class Covid {
+
+        static loadStars() {
+
+          try {
+
+            for(let i = 0; i < localStorage.length; i++) {
+              let key = localStorage.key(i);
+              Covid.toggleStar(key, localStorage.getItem(key) === "true");
+            }
+
+          }
+          catch(e) {
+            // do nothing
+          }
+
+        }
+
+        static toggleStar(location, itemState) {
+
+          itemState ? $("#" + location).find('path').attr('fill', '#ffd500') :
+                      $("#" + location).find('path').attr('fill', '#ffffff');
+
+        }
+        static storeStar(location) {
+
+          try {
+
+            let itemState = localStorage.getItem(location);
+            let newState = itemState != "true";
+            localStorage.setItem(location, newState);
+            return newState;
+
+          } catch(e) {
+
+            alert("Could not record your favorite - are you in private mode?");
+            throw e;
+
+          }
+
+        }
+
+        static tapStar(el) {
+
+          try {
+
+            let item = $(el).parent().attr("id");
+            let itemState = Covid.storeStar(item);
+
+            Covid.toggleStar(item, itemState);
+
+          }
+          catch(e) {
+            // do nothing (if storeStar fails, an alert is issued)
+          }
+
+        }
+
+    }
+  </script>
+</body>
+</html>

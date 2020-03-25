@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
+  <meta property="og:site_name" content="Covid Almanac" />
+  <link rel="shortcut icon" href="https://covidalmanac.com/covidalmanac.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="192x192" href="https://covidalmanac.com/logo.png" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Covid Almanac" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="theme-color" content="#ffffff" />
+  <style>
+    /* Tags and main components */
+    html, body {
+      height:100%;
+      line-height:26px;
+      font-size:16px;
+      font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    }
+    body {
+      display:flex;
+      flex-direction:column;
+      overflow-y:scroll;
+      overscroll-behavior-y:none;
+    }
+    a,a:active {
+      font-weight:600;
+      color:#000;
+    }
+    a:visited {
+      color:#555;
+    }
+    svg {
+      cursor:pointer;
+      position:relative;
+      top:.225em;
+      padding-right:10px;
+    }
+    .container {
+      flex:1 0 auto;
+      max-width:1100px;
+      margin:auto;
+    }
+    .text-center {
+      text-align:center;
+    }
+    /* Header */
+    .logo-about {
+      display:flex;
+      justify-content:space-between;
+    }
+    .logo {
+      font-size:1.4em;
+      text-shadow:2px 1px 3px rgba(100,100,100,0.6);
+      max-width:550px;
+      flex:1;
+    }
+    .logo img {
+      position:relative;
+      top:.4em;
+      margin-right:10px;
+    }
+    .logo a {
+      text-decoration:none;
+    }
+    .logo a:visited {
+      color:#000;
+    }
+    .menu-items {
+      display:flex;
+      max-width:100px;
+      flex:1;
+      text-align:right;
+      justify-content:space-between;
+    }
+    .info {
+      max-width:800px;
+      margin:auto;
+      margin-top:10px;
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius:7px;
+    }
+    /* Content */
+    .main {
+      max-width:1100px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:auto;
+    }
+    .footer {
+      margin-bottom:5px;
+      padding:10px;
+      flex-shrink:0;
+      text-align:center;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-about">
+        <div class="logo"><a href="https://covidalmanac.com/"><img src="logo.png" height="30">COVID Almanac</a></div>
+        <div class="menu-items">
+          <a href="/" id="about-menu">Home</a>
+          <a href="https://twitter.com/covidalmanac" target="_blank"><img src="twitter.svg" alt="Twitter" height="24"></a>
+        </div>
+      </div>
+      <div class="text-center info">
+        Covid Almanac is a list of resources for researchers and people looking for ways they can help during this global pandemic. If you are feeling unwell contact your doctor. If you are looking for official information try the <a href="https://www.cdc.gov/coronavirus/2019-ncov">CDC</a>.
+      </div>
+    </div>
+
+    <div class="main">
+
+      <h2>About</h2>
+      <p>Hi, I'm <a href="https://twitter.com/danbsfo" target="_blank">Dan</a>! I am currently maintaining COVID Almanac, which is just a reference of resources. The Almanac offers a signal of credibility using Twitter endorsements which appears next to the resource link. The starring feature uses your browser's local storage to keep track of what you think is important (by definition this stays on your device).
+      </p>
+      <p>If you want to know when the site has been updated, click the Twitter logo and <a target="_blank" href="https://twitter.com/covidalmanac">follow @CovidAlmanac</a>.</p>
+      <p>If you want to contribute, send a Tweet with the resource, category, and Twitter endorsements. Please try to make sure the resource is relevant to the situation. For example, ZoomRoulette.heroku.com is on the side of relevance, but some random app or game that happens to be fun in isolation may not be. Endorsements on Twitter are important for helping decide relevance.</p>
+      <p>Contact: <a href="mailto:hello@covidalmanac.com">hello@covidalmanac.com</a></p>
+    </div>
+
+  </div>
+  <div class="footer">
+    Copyleft 2020 Covid Almanac
+  </div>
+</body>
+</html>
